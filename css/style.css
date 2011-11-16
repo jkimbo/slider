@@ -241,12 +241,12 @@ body {
 
 /* Flex slider caption */
 h3.flex-caption {
-    bottom: 50px;
+    bottom: 15%;
     padding: 15px;
     display: block;
-    font-size: 35px;
+    font-size: 2em;
     left: 20px;
-    line-height: 40px;
+    line-height: 1em;
     margin-bottom: 20px;
 }
 
@@ -257,23 +257,31 @@ p.flex-caption {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* ==|== media queries ======================================================
    PLACEHOLDER Media Queries for Responsive Design.
    These override the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
 
+@media screen and (max-width:480px) {
+    h3.flex-caption {
+        font-size: 1em;
+        left: 8%;
+        line-height: 0.4em;
+        margin-bottom: 28%;
+    }
+
+    p.flex-caption {
+        font-size: 0.5em;
+        line-height: 0.2em;
+        left: 8%;
+        margin-bottom: 5%;
+    }
+}
+
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
+
 
 }
 
