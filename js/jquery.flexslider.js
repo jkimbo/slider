@@ -396,12 +396,12 @@
         
         //Optional paramter to pause slider when making an anmiation call
         if (pause) {
-          slider.pause();
+            slider.pause();
         }
         
         //Update controlNav   
         if (slider.vars.controlNav) {
-          slider.controlNav.removeClass('active').eq(target).addClass('active');
+            slider.controlNav.removeClass('active').eq(target).addClass('active');
         }
         
         //Is the slider at either end
@@ -442,7 +442,7 @@
               });   
           } else {
             slider.container.animate(slider.args, slider.vars.animationDuration, function(){
-              slider.wrapup(dimension);
+                slider.wrapup(dimension);
             });
           }
         } else { //Default to Fade

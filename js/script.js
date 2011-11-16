@@ -7,6 +7,7 @@ var slider = $('.flexslider');
 $(document).ready(function() {
     var flex = slider.flexslider({
         animation: 'slide',
+        slideshow: false,
         start: function(slide) {
             resize_masks();
             $('#mask-left').click(function() {
@@ -15,9 +16,32 @@ $(document).ready(function() {
             $('#mask-right').click(function() {
                 slide.flexAnimate(slide.getTarget('next'));
             });
+
+            // nudging
+            var animateright = {
+                "margin-left": -15
+            };
+            var animateleft = {
+                "margin-left": +15
+            };
+            var animatereset = {
+                "margin-left": 0
+            }
+            var duration = { duration: 300, queue: false };
+            slider.find('.next').hover(function() {
+                $(slide.container).animate(animateright, duration);                
+            }, function() {
+                $(slide.container).animate(animatereset, duration);                
+            });
+            slider.find('.prev').hover(function() {
+                $(slide.container).animate(animateleft, duration);                
+            }, function() {
+                $(slide.container).animate(animatereset, duration);                
+            });
+        }, 
+        after: function(slide) {
         }        
     }); 
-
 });
 
 $(window).resize(function() {
