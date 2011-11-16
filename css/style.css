@@ -221,7 +221,7 @@ body {
     height: 100%;
 }
 
-#mask-left, #mask-right {
+.masks {
     background: white;
     opacity: 0.7;
     position: absolute;
@@ -239,7 +239,22 @@ body {
     right: 0px;
 }
 
+/* Flex slider caption */
+h3.flex-caption {
+    bottom: 50px;
+    padding: 15px;
+    display: block;
+    font-size: 35px;
+    left: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
 
+p.flex-caption {
+    padding: 15px;
+    display: block;
+    left: 20px;
+}
 
 
 

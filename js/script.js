@@ -4,14 +4,20 @@
 
 var slider = $('.flexslider');
 
-$(window).load(function() {
-
+$(document).ready(function() {
     var flex = slider.flexslider({
         animation: 'slide',
         start: function(slide) {
             resize_masks();
+            $('#mask-left').click(function() {
+                slide.flexAnimate(slide.getTarget('prev'));
+            });
+            $('#mask-right').click(function() {
+                slide.flexAnimate(slide.getTarget('next'));
+            });
         }        
     }); 
+
 });
 
 $(window).resize(function() {

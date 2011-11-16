@@ -42,9 +42,13 @@
                 <ul class="slides">
                     <li>
                         <img src="timthumb.php?src=img/slider/ice_scream.png&w=1500&h=500" />
+                        <h3 class="flex-caption">F****** amazing!</h3>
+                        <p class="flex-caption">An absolutely flipping amazing caption</p>
                     </li>
                     <li>
                         <img src="timthumb.php?src=img/slider/Pencil.png&w=1500&h=500" />
+                        <h3 class="flex-caption">OMG!</h3>
+                        <p class="flex-caption">Ok you know I said that the last one was amazing? This is better.</p>
                     </li>
                     <li>
                         <img src="timthumb.php?src=img/slider/superhrdina.png&w=1500&h=500" />
